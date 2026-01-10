@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EtherRealm | Senior Partner–Led Capital Stewardship</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0b0e13;
+  --bg-soft:#111722;
+  --text:#e8eaf0;
+  --muted:#9aa4b2;
+  --line:rgba(255,255,255,.08);
+  --max-width:1200px;
+  --radius:14px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter',sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+
+h1,h2,h3{
+  font-family:'Playfair Display',serif;
+  font-weight:500;
+  letter-spacing:.3px;
+}
+
+p{color:var(--muted);font-size:16px;}
+
+section{
+  padding:120px 24px;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+}
+
+/* ---------------- Hero ---------------- */
+.hero{
+  position:relative;
+  height:100vh;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+}
+.hero video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:.55;
+}
+.hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to bottom,rgba(0,0,0,.65),rgba(0,0,0,.85));
+}
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:900px;
+}
+.hero h1{
+  font-size:64px;
+}
+.hero p{
+  margin-top:24px;
+  font-size:18px;
+  max-width:640px;
+}
+
+/* ---------------- Generic ---------------- */
+.section-title{
+  max-width:760px;
+  margin-bottom:48px;
+}
+.section-title h2{
+  font-size:42px;
+}
+.divider{
+  height:1px;
+  background:var(--line);
+  margin:64px 0;
+}
+
+/* ---------------- Philosophy ---------------- */
+.philosophy p{
+  max-width:760px;
+  margin-bottom:28px;
+}
+
+/* ---------------- Structure ---------------- */
+.structure{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:80px;
+  align-items:center;
+}
+.structure img{
+  width:100%;
+  border-radius:var(--radius);
+  opacity:.85;
+}
+
+/* ---------------- Partners ---------------- */
+.partner{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  align-items:center;
+  margin-bottom:120px;
+}
+.partner:nth-child(even){
+  grid-template-columns:1fr 1fr;
+  direction:rtl;
+}
+.partner:nth-child(even) > *{
+  direction:ltr;
+}
+.partner img{
+  width:100%;
+  border-radius:var(--radius);
+}
+.partner h3{
+  font-size:34px;
+  margin-bottom:16px;
+}
+.partner .role{
+  font-size:14px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:24px;
+}
+
+/* ---------------- Roles ---------------- */
+.roles{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:48px;
+}
+.role-card{
+  padding:32px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+}
+.role-card h4{
+  font-size:22px;
+  margin-bottom:16px;
+}
+
+/* ---------------- Jurisdiction ---------------- */
+.jurisdiction{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:64px;
+}
+.jurisdiction img{
+  width:100%;
+  border-radius:var(--radius);
+}
+
+/* ---------------- Footer ---------------- */
+footer{
+  padding:80px 24px;
+  border-top:1px solid var(--line);
+}
+footer p{
+  font-size:14px;
+}
+
+/* ---------------- Responsive ---------------- */
+@media(max-width:900px){
+  .hero h1{font-size:44px;}
+  section{padding:80px 20px;}
+  .structure,.partner,.jurisdiction{grid-template-columns:1fr;gap:48px;}
+  .roles{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <video src="hero.mp4" autoplay muted loop playsinline></video>
+  <div class="container hero-content">
+    <h1>EtherRealm</h1>
+    <p>
+      A Senior Partner–Led Capital Stewardship Platform  
+      Dedicated to Long-Term Allocation, Governance, and Strategic Access
+    </p>
+  </div>
+</section>
+
+<!-- Philosophy -->
+<section class="philosophy">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Philosophy</h2>
+    </div>
+    <p>
+      EtherRealm was established on a simple but demanding principle: capital must be governed, not chased.
+      In an environment defined by cycles, narratives, and volatility, we operate with restraint,
+      prioritizing decision discipline over short-term momentum.
+    </p>
+    <p>
+      We do not compete for speed. We compete for judgment.
+      Our mandate is to steward capital across cycles, align incentives at the highest level,
+      and preserve the decision-making integrity that long-term capital requires.
+    </p>
+    <p>
+      Access to EtherRealm is selective by design. We work with a limited number of partners who
+      understand that enduring outcomes are built through patience, structure, and governance.
+    </p>
+  </div>
+</section>
+
+<!-- Structure -->
+<section>
+  <div class="container structure">
+    <div>
+      <h2>Governance & Decision Structure</h2>
+      <p>
+        Investment authority at EtherRealm resides at the Senior Partner level.
+        All capital deployment decisions are reviewed and approved through
+        a formal Investment Committee process, ensuring consistency, accountability,
+        and alignment with long-term objectives.
+      </p>
+      <p>
+        This structure allows EtherRealm to operate with both flexibility and control—
+        adapting to opportunity while maintaining disciplined oversight.
+      </p>
+    </div>
+    <img src="structure.jpg" alt="">
+  </div>
+</section>
+
+<!-- Partners -->
+<section>
+  <div class="container">
+
+    <div class="partner">
+      <img src="partner-01.jpg" alt="">
+      <div>
+        <div class="role">Senior Partner</div>
+        <h3>Capital Formation & Governance</h3>
+        <p>
+          As a Senior Partner, responsibilities extend beyond capital sourcing into
+          governance, decision authority, and long-term strategic alignment.
+          Fundraising is not transactional—it is built on trust, reputation,
+          and decades of institutional relationships.
+        </p>
+        <p>
+          Senior Partners serve on the Investment Committee with final decision authority,
+          including veto rights on material allocations.
+          This responsibility reflects both experience and accountability.
+        </p>
+      </div>
+    </div>
+
+    <div class="partner">
+      <img src="partner-02.jpg" alt="">
+      <div>
+        <div class="role">Senior Partner</div>
+        <h3>Investment Committee & Allocation</h3>
+        <p>
+          Investment decisions are evaluated not only on potential return,
+          but on risk asymmetry, governance structure, and strategic relevance.
+          Senior Partners determine where capital is deployed—and where it is not.
+        </p>
+        <p>
+          This authority ensures that every allocation reflects the firm’s
+          long-term philosophy rather than short-term market signals.
+        </p>
+      </div>
+    </div>
+
+    <div class="partner">
+      <img src="partner-03.jpg" alt="">
+      <div>
+        <div class="role">Senior Partner</div>
+        <h3>Strategic Access & Crisis Navigation</h3>
+        <p>
+          Beyond allocation, Senior Partners provide portfolio companies with
+          strategic access to institutions, regulators, and global counterparts.
+        </p>
+        <p>
+          In moments of uncertainty—restructuring, negotiation, or exit—
+          Senior Partners represent the firm with authority and discretion.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Roles -->
+<section>
+  <div class="container">
+    <div class="section-title">
+      <h2>Understanding Capital Roles</h2>
+    </div>
+    <div class="roles">
+      <div class="role-card">
+        <h4>Analyst</h4>
+        <p>Searching for information and identifying opportunity at the ground level.</p>
+      </div>
+      <div class="role-card">
+        <h4>Vice President</h4>
+        <p>Directing execution, evaluating probability, and managing operational risk.</p>
+      </div>
+      <div class="role-card">
+        <h4>Senior Partner</h4>
+        <p>Determining direction—deciding which mountain is worth acquiring, and securing the capital to do so.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Jurisdiction -->
+<section>
+  <div class="container jurisdiction">
+    <div>
+      <h2>Jurisdiction & Presence</h2>
+      <p>
+        EtherRealm is registered in the Cayman Islands, reflecting international
+        investment standards and cross-border structuring requirements.
+      </p>
+      <p>
+        Our operating office is located in Irvine, California,
+        serving as the firm’s strategic and administrative base in the United States.
+      </p>
+      <p>
+        2030 Main St #1300<br>
+        Irvine, CA 92614, United States
+      </p>
+    </div>
+    <img src="irvine.jpg" alt="">
+  </div>
+</section>
+
+<!-- Access -->
+<section>
+  <div class="container">
+    <h2>Access</h2>
+    <p>
+      Engagement with EtherRealm is by referral only.  
+      For private introductions, inquiries may be directed to:
+    </p>
+    <p>
+      <strong>contact@etherrealm.com</strong>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© EtherRealm. All rights reserved.</p>
+    <p>Capital stewardship conducted through disciplined governance and long-term alignment.</p>
+  </div>
+</footer>
+
+</body>
+</html>
