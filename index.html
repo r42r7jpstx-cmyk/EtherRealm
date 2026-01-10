@@ -176,6 +176,42 @@ footer{
   padding:80px 24px;
   border-top:1px solid var(--line);
 }
+/* ===============================
+   Section Divider (DO NOT TOUCH CONTENT)
+   =============================== */
+
+/* 在相邻模块之间创建高级分隔 */
+section + section{
+  position:relative;
+}
+
+/* 垂直渐隐分隔线 */
+section + section::before{
+  content:'';
+  position:absolute;
+  top:-70px;
+  left:50%;
+  transform:translateX(-50%);
+  width:1px;
+  height:80px;
+  background:linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255,255,255,.35),
+    transparent
+  );
+  pointer-events:none;
+}
+
+/* 移动端缩短分隔线，保持克制 */
+@media(max-width:900px){
+  section + section::before{
+    height:60px;
+    top:-50px;
+  }
+}
+
+  
 
 /* ---------------- Responsive ---------------- */
 @media(max-width:900px){
@@ -394,3 +430,4 @@ window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scr
 
 </body>
 </html>
+
