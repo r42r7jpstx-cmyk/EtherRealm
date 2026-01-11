@@ -37,6 +37,46 @@ p{color:var(--muted);font-size:16px;}
 section{padding:120px 24px;}
 .container{max-width:var(--max-width);margin:0 auto;}
 
+  .hero-chain-overlay{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:.18;
+  mix-blend-mode:screen;
+  pointer-events:none;
+}
+
+  .philosophy-visual{
+  display:block;
+  width:100%;
+  max-width:900px;
+  margin:80px auto 0;
+  opacity:.85;
+  border-radius:var(--radius);
+}
+
+.governance-network{
+  width:100%;
+  margin-top:32px;
+  border-radius:var(--radius);
+  opacity:.9;
+}
+.hero-logo{
+  width:120px;
+  margin-bottom:32px;
+  opacity:.95;
+}
+.security-visual{
+  width:100%;
+  max-width:1000px;
+  margin:0 auto;
+  display:block;
+  opacity:.85;
+  border-radius:var(--radius);
+}
+
 /* ---------------- Navigation ---------------- */
 nav{
   position:fixed;
@@ -225,8 +265,10 @@ section + section::before{
 
 <!-- Hero -->
 <section class="hero">
-  <video src="hero.mp4" autoplay muted loop playsinline></video>
+  <video src="hero.mp4" autoplay muted loop playsinline></video><img src="hero-chain.jpg" class="hero-chain-overlay" alt="">
+
   <div class="container hero-content">
+    <img src="etherrealm-logo.png" class="hero-logo" alt="EtherRealm">
     <h1>EtherRealm</h1>
     <p>
       A Senior Partner–Led Capital Stewardship Platform Serving High-Net-Worth Individuals,
@@ -252,7 +294,7 @@ section + section::before{
       preserve decision authority at the highest level,
       and align incentives over the long term.
     </p>
-    <p>
+    <p><img src="infrastructure-cubes.jpg" class="philosophy-visual" alt="">
       EtherRealm operates with restraint by design.
       We engage with a limited number of partners who understand that enduring outcomes
       are built through patience, structure, and governance.
@@ -280,8 +322,9 @@ section + section::before{
         while operational activities are conducted through our United States office
         in Irvine, California.
       </p>
-    </div>
+   <div>
     <img src="structure.jpg" alt="">
+    <img src="network-graph.jpg" class="governance-network" alt="">
   </div>
 </section>
 
@@ -379,6 +422,13 @@ section + section::before{
 </section>
 
 <div class="section-divider"></div>
+<section>
+  <div class="container">
+    <img src="block-security.jpg" class="security-visual" alt="">
+  </div>
+</section>
+
+<div class="section-divider"></div>
 
 <!-- Access -->
 <section id="access">
@@ -425,4 +475,5 @@ window.addEventListener('scroll',()=>{
 
 </body>
 </html>
+
 
