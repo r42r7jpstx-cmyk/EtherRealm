@@ -48,12 +48,12 @@ section{padding:120px 24px;}
   pointer-events:none;
 }
 
-  .philosophy-visual{
+.philosophy-visual{
   display:block;
   width:100%;
-  max-width:900px;
-  margin:80px auto 0;
-  opacity:.85;
+  max-width:640px;
+  margin:64px auto 0;
+  opacity:.75;
   border-radius:var(--radius);
 }
 
@@ -75,6 +75,22 @@ section{padding:120px 24px;}
   display:block;
   opacity:.85;
   border-radius:var(--radius);
+}
+  .hero-title{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.hero-logo{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  object-fit:cover;
+  opacity:.95;
+}
+.security-section{
+  padding:60px 24px;
 }
 
 /* ---------------- Navigation ---------------- */
@@ -267,15 +283,17 @@ section + section::before{
 <section class="hero">
   <video src="hero.mp4" autoplay muted loop playsinline></video><img src="hero-chain.jpg" class="hero-chain-overlay" alt="">
 
-  <div class="container hero-content">
+ <div class="container hero-content">
+  <div class="hero-title">
     <img src="etherrealm-logo.png" class="hero-logo" alt="EtherRealm">
     <h1>EtherRealm</h1>
-    <p>
-      A Senior Partner–Led Capital Stewardship Platform Serving High-Net-Worth Individuals,
-      Family Offices, and Institutional Limited Partners
-    </p>
   </div>
-</section>
+  <p>
+    A Senior Partner–Led Capital Stewardship Platform Serving High-Net-Worth Individuals,
+    Family Offices, and Institutional Limited Partners
+  </p>
+</div>
+
 
 <div class="section-divider"></div>
 
@@ -422,7 +440,7 @@ section + section::before{
 </section>
 
 <div class="section-divider"></div>
-<section>
+<section class="security-section">
   <div class="container">
     <img src="block-security.jpg" class="security-visual" alt="">
   </div>
@@ -475,5 +493,6 @@ window.addEventListener('scroll',()=>{
 
 </body>
 </html>
+
 
 
