@@ -223,6 +223,16 @@ footer{
   padding:80px 24px;
   border-top:1px solid var(--line);
 }
+  .footer-inner{
+  display:flex;
+  flex-direction:column;
+  gap:32px;
+}
+
+.footer-logo{
+  width:120px;
+  opacity:.95;
+}
 
 /* Responsive */
 @media(max-width:900px){
@@ -256,10 +266,7 @@ footer{
   <img src="hero-chain.jpg" class="hero-chain-overlay" alt="">
 
   <div class="container hero-content">
-    <div class="hero-title">
-      <img src="etherrealm-logo.png" class="hero-logo" alt="EtherRealm">
-      <h1>EtherRealm</h1>
-    </div>
+    <h1>EtherRealm</h1>
     <p>
       A Senior Partner–Led Capital Stewardship Platform Serving High-Net-Worth Individuals,
       Family Offices, and Institutional Limited Partners
@@ -454,7 +461,8 @@ footer{
 </section>
 
 <footer>
-  <div class="container">
+  <div class="container footer-inner">
+    <img src="etherrealm-logo.png" class="footer-logo" alt="EtherRealm">
     <p>© EtherRealm. All rights reserved.</p>
     <p>Capital stewardship through disciplined governance and long-term alignment.</p>
   </div>
@@ -469,3 +477,4 @@ window.addEventListener('scroll',()=>{
 
 </body>
 </html>
+
